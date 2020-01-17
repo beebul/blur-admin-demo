@@ -1,0 +1,26 @@
+<div ng-controller="TablesPageCtrl">
+
+<div class="horizontal-scroll">
+  <table class="table table-hover">
+    <thead>
+    <tr class="black-muted-bg">
+      <th class="align-left">&nbsp;</th>
+      <th class="align-right">2018</th>
+      <th class="align-right">2019</th>
+      <th class="align-right"></th>
+      <th class="table-arr"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-controller="TablesPageCtrl" ng-repeat="item in KPI1TableData" class="no-top-border">
+      <td ng-class="nowrap">{{item.browser}}</td>
+      <td class="align-right">{{item.visits}}</td>
+      <td class="align-right">{{item.purchases}}</td>
+      <td class="align-right">{{item.percent}}</td>
+      <td class="table-arr"><i ng-class="{'icon-up': item.isPercentUp, 'icon-down': !item.isPercentUp }"></i></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>

@@ -1,0 +1,32 @@
+<div ng-controller="TablesPageCtrl">
+
+<div class="horizontal-scroll">
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th class="align-right"></th>
+      <th class="align-right">2014</th>
+      <th class="align-right">2015</th>
+      <th class="align-right">2016</th>
+      <th class="align-right">2017</th>
+      <th class="align-right">2018</th>
+      <th class="align-right">2019</th>
+      <th class="align-right">Budget 2019</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="item in KPIFinanceTableData">
+      <td ng-class="nowrap align-left">{{item.label}}</td>
+      <td class="align-right">{{item.twentyfourteen}}</td>
+      <td class="align-right">{{item.twentyfifteen}}</td>
+      <td class="align-right">{{item.twentysixteen}}</td>
+      <td class="align-right">{{item.twentyseventeen}}</td>
+      <td class="align-right">{{item.twentyeighteen}}</td>
+      <td class="align-right">{{item.twentynineteen}}</td>
+      <td class="align-right">{{item.budgettwentynineteen}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>

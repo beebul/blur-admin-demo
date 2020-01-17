@@ -1,0 +1,139 @@
+<dashboard-pie-chart></dashboard-pie-chart>
+
+<div class="row ng-scope">
+
+  <div class="col-md-12 col-lg-3">
+    <div class="panel panel-primary bootstrap-panel xsmall-panel">
+      <div class="panel-heading" style="color:white;">Policies and processes</div>
+      <div class="panel-body">
+        <p><em>Complete set of University of South Australia policies and procedures as approved by the University Council.</em>
+          <ul>
+            <li>Academic</li>
+            <li>Corporate</li>
+            <li>HR</li>
+            <li>Research</li>
+          </ul>
+        <br></p><br>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-12 col-lg-3">
+    <div class="panel panel-primary bootstrap-panel xsmall-panel">
+      <div class="panel-heading">Panel Heading</div>
+      <div class="panel-body">
+        <p class="p">The <code>.panel-heading</code> class adds a heading to the panel.Easily add a heading
+          container to your
+          panel with .panel-heading. You may also include any
+          <code>h1-h6</code> with a <code>.panel-title</code> class to add a pre-styled heading.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-12 col-lg-3">
+    <div class="panel panel-primary bootstrap-panel xsmall-panel">
+      <div class="panel-heading">Panel Heading</div>
+      <div class="panel-body">
+        <p class="p-with-code">The <code>.panel-heading</code> class adds a heading to the panel.Easily add a heading
+          container to your
+          panel with .panel-heading. You may also include any
+          <code>h1-h6</code> with a <code>.panel-title</code> class to add a pre-styled heading.
+        </p>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-md-12 col-lg-3">
+    <div class="panel panel-primary bootstrap-panel xsmall-panel">
+      <div class="panel-heading">Panel Heading</div>
+      <div class="panel-body">
+        <p class="p-with-code">The <code>.panel-heading</code> class adds a heading to the panel.Easily add a heading
+          container to your
+          panel with .panel-heading. You may also include any
+          <code>h1-h6</code> with a <code>.panel-title</code> class to add a pre-styled heading.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+<div class="row">
+  <div class="col-lg-6 col-md-12 col-sm-12"
+       ba-panel
+       ba-panel-title="2020 Classes Timetabled"
+       ba-panel-class="medium-panel traffic-panel">
+    <traffic-chart></traffic-chart>
+  </div>
+<!--   <div class="col-lg-6 col-md-12 col-sm-12"
+       ba-panel
+       ba-panel-title="Users by Country"
+       ba-panel-class="medium-panel">
+    <dashboard-map></dashboard-map>
+  </div> -->
+<div class="col-lg-6 col-md-12 col-sm-12" ng-controller="morrisCtrl">
+ <div ba-panel ba-panel-title="Student Enrolment Numbers" ba-panel-class="medium-panel">
+        <div
+            bar-chart
+            bar-data='barData'
+            bar-x='y'
+            bar-y='["a"]'
+            bar-labels='["Series A"]'
+            bar-colors='colors'>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+  <div class="col-xlg-9 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div class="row">
+      <div class="col-xlg-8 col-lg-12 col-md-12 col-sm-7 col-xs-12"
+           ba-panel
+           ba-panel-title="Revenue"
+           ba-panel-class="medium-panel">
+        <dashboard-line-chart></dashboard-line-chart>
+      </div>
+      <div class="col-xlg-4 col-lg-12 col-md-12 col-sm-5 col-xs-12"
+           ba-panel
+           ba-panel-class="popular-app medium-panel">
+        <popular-app></popular-app>
+      </div>
+    </div>
+  </div>
+  <div class="col-xlg-3 col-lg-6 col-md-6 col-sm-12 col-xs-12"
+       ba-panel
+       ba-panel-title="Feed"
+       ba-panel-class="large-panel with-scroll feed-panel">
+    <blur-feed></blur-feed>
+  </div>
+</div>
+
+<div class="row shift-up">
+  <div class="col-xlg-3 col-lg-6 col-md-6 col-xs-12"
+       ba-panel
+       ba-panel-title="To Do List"
+       ba-panel-class="xmedium-panel feed-comply-panel with-scroll todo-panel">
+    <dashboard-todo></dashboard-todo>
+  </div>
+  <div class="col-xlg-6 col-lg-6 col-md-6 col-xs-12"
+       ba-panel
+       ba-panel-title="Calendar"
+       ba-panel-class="xmedium-panel feed-comply-panel with-scroll calendar-panel">
+    <dashboard-calendar></dashboard-calendar>
+  </div>
+</div>
+
+<!--<div class="row">
+  <div class="col-lg-4 col-sm-6 col-xs-12">
+    <div ba-panel ba-panel-title="Weather" ba-panel-class="medium-panel with-scroll">
+      <blur-weather forecast="5"></blur-weather>
+    </div>
+  </div>
+</div>-->
