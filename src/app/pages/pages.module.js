@@ -12,6 +12,7 @@
     'BlurAdmin.pages.kpis',
     'BlurAdmin.pages.applications',
     'BlurAdmin.pages.staff',
+    'BlurAdmin.pages.studentservices',
     'BlurAdmin.pages.ui',
     //'BlurAdmin.pages.components',
     //'BlurAdmin.pages.form',

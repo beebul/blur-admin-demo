@@ -10,7 +10,7 @@
         .state('kpis', {
           url: '/kpis',
           templateUrl: 'app/pages/kpis/kpis.html',
-          title: 'KPIs',
+          title: 'Academic Unit KPIs',
           sidebarMeta: {
             order: 110,
           },
