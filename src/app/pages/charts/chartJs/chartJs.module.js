@@ -66,8 +66,13 @@
             tooltips: {
                 enabled: false
             },
-            legend: { display: true },
- 
+            legend: { display: true }
+        });
+
+        Chart.scaleService.updateScaleDefaults('linear', {
+            ticks: {
+                min: 0
+            }
         });
     }
 

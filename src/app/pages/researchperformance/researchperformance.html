@@ -1,29 +1,36 @@
 <div class="row ng-scope">
-
   <div class="row">
-    <div class="col-lg-6 col-md-12">
-      <div ba-panel ba-panel-title="Hover Rows" ba-panel-class="with-scroll table-panel">
-        <div include-with-scope="app/pages/tables/widgets/hoverRows.html"></div>
+    <div class="col-lg-4 col-md-12">
+      <div ng-controller="chartJs4DCtrl">
+        <div ba-panel ba-panel-title="Research Leadership Capacity" ba-panel-class="with-scroll panel-primary">
+          <div class="chartjs-canvas-holder-third-row">
+            <canvas id="bar2" class="chart chart-bar"
+            chart-data="data" chart-labels="labels" chart-series="series" chart-click="changeData" chart-update="updateC">
+            </canvas>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-6 col-md-12 col-sm-12"
-      ba-panel
-      ba-panel-title="2020 Classes Timetabled"
-      ba-panel-class="medium-panel traffic-panel">
-    <traffic-chart></traffic-chart>
-  </div>
-  <div class="col-lg-6 col-md-12 col-sm-12" ng-controller="morrisCtrl">
-    <div ba-panel ba-panel-title="Student Enrolment Numbers" ba-panel-class="medium-panel">
-      <div
-        bar-chart
-        bar-data='barData'
-        bar-x='y'
-        bar-y='["a"]'
-        bar-labels='["Series A"]'
-        bar-colors='colors'>
+    <div class="col-lg-4 col-md-12">
+      <div ng-controller="chartJs5DCtrl">
+        <div ba-panel ba-panel-title="Research Income ($mil)" ba-panel-class="with-scroll panel-primary">
+          <div class="chartjs-canvas-holder-third-row">
+            <canvas id="bar3" class="chart chart-bar"
+            chart-data="data" chart-labels="labels" chart-series="series" chart-click="changeData" chart-update="updateC">
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-12">
+      <div ng-controller="chartJs6DCtrl">
+        <div ba-panel ba-panel-title="Publication Quality" ba-panel-class="with-scroll panel-primary">
+          <div class="chartjs-canvas-holder-third-row">
+            <canvas id="bar4" class="chart chart-bar"
+            chart-data="data" chart-labels="labels" chart-series="series" chart-click="changeData" chart-update="updateC">
+            </canvas>
+          </div>
+        </div>
       </div>
     </div>
   </div>

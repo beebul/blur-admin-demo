@@ -10,7 +10,7 @@
         .state('staff', {
           url: '/staff',
           templateUrl: 'app/pages/staff/staff.html',
-          title: 'Staff',
+          title: 'Staff Workforce',
           sidebarMeta: {
             order: 250,
           },

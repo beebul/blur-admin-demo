@@ -32,9 +32,9 @@
     };
 
     $scope.areaLineData = {
-      labels: [1, 2, 3, 4, 5, 6, 7, 8],
+      labels: ["2021","2022","2023","2024","2025","2026"],
       series: [
-        [5, 9, 7, 8, 5, 3, 5, 4]
+        [7, 3, 13, 0, 9,7]
       ]
     };
 
@@ -161,8 +161,8 @@
     };
 
     $scope.labelsPieData = {
-      labels: ['Bananas', 'Apples', 'Grapes'],
-      series: [20, 15, 40]
+      labels: ['Female', 'Male'],
+      series: [63, 37]
     };
 
     $scope.labelsPieOptions = {
@@ -176,8 +176,8 @@
     };
 
     $scope.simpleDonutData = {
-      labels: ['Bananas', 'Apples', 'Grapes'],
-      series: [20, 15, 40]
+      labels: ['Male','Female'],
+      series: [37,63]
     };
 
     $scope.simpleDonutOptions = {

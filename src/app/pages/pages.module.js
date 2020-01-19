@@ -12,6 +12,8 @@
     'BlurAdmin.pages.kpis',
     'BlurAdmin.pages.learning',
     'BlurAdmin.pages.quality',
+    'BlurAdmin.pages.completions',
+    'BlurAdmin.pages.grades',
     'BlurAdmin.pages.hdr',
     'BlurAdmin.pages.enrolment',
     'BlurAdmin.pages.budget',

@@ -18,42 +18,37 @@
       color: layoutColors.defaultText,
       dataProvider: [
         {
-          country: 'USA',
-          visits: 3025,
+          country: '2015',
+          visits: 58.8,
           color: layoutColors.primary
         },
         {
-          country: 'China',
-          visits: 1882,
+          country: '2016',
+          visits: 65.7,
           color: layoutColors.danger
 
         },
         {
-          country: 'Japan',
-          visits: 1809,
+          country: '2017',
+          visits: 65.9,
           color: layoutColors.info
         },
         {
-          country: 'Germany',
-          visits: 1322,
+          country: '2018',
+          visits: 67.9,
           color: layoutColors.success
         },
         {
-          country: 'UK',
-          visits: 1122,
+          country: '2019',
+          visits: 67.4,
           color: layoutColors.warning
-        },
-        {
-          country: 'France',
-          visits: 1114,
-          color: layoutColors.primaryLight
         }
       ],
       valueAxes: [
         {
           axisAlpha: 0,
-          position: 'left',
-          title: 'Visitors from country',
+          position: 'top',
+          title: '',
           gridAlpha: 0.5,
           gridColor: layoutColors.border,
         }
