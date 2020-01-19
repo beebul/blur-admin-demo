@@ -65,7 +65,9 @@
         ChartJsProvider.setOptions('bar', {
             tooltips: {
                 enabled: false
-            }
+            },
+            legend: { display: true },
+ 
         });
     }
 

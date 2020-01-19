@@ -6,23 +6,18 @@
   'use strict';
 
   angular.module('BlurAdmin.pages.charts.chartJs')
-    .controller('chartJs2DCtrl', chartJs2DCtrl);
+    .controller('chartJs3DCtrl', chartJs3DCtrl);
 
   /** @ngInject */
-  function chartJs2DCtrl($scope) {
-    $scope.labels =["2014", "2015", "2016", "2017", "2018"];
+  function chartJs3DCtrl($scope) {
+    $scope.labels =["Domestic","International"];
     $scope.data = [
-      [83.2, 84.4, 82.9, 82.9, 83.4],
-      [84.4, 90.9, 90.3, 91.8, 79.7]
+      [1741,720],
+      [1228,69]
     ];
-    $scope.series = ['ALH Satisfaction', 'National Average'];
-    $scope.legend = ['ALH Satisfaction', 'National Average'];
+    $scope.series = ['Applications', 'Offers'];
 
-    $scope.options = { 
-    legend: { display: true },
-    responsive: true, 
-    maintainAspectRatio: false
-    };
+    $scope.options = { legend: { display: true } };
 
     $scope.changeData = function () {
       $scope.data[0] = shuffle($scope.data[0]);
@@ -33,8 +28,6 @@
       for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x){}
       return o;
     }
-
-
 
   }
 

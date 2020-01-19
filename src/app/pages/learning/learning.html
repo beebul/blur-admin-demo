@@ -1,0 +1,23 @@
+<div class="row ng-scope">
+  <div class="widgets">
+    <div class="row">
+      <div class="col-lg-6 col-md-12" ng-controller="chartJs2DCtrl" style="height: 500px">
+        <div ba-panel ba-panel-title="Teaching Quality - Satisfaction Ratings" ba-panel-class="with-scroll" style="height: 500px">
+          <div class="chartjs-canvas-holder-third-row">
+            <canvas id="bar" class="chart chart-bar"
+            chart-data="data" chart-labels="labels" chart-series="series" chart-click="changeData" chart-update="updateC">
+            </canvas>
+          </div>
+        </div>
+      </div>
+       
+      <div class="col-lg-6 col-md-12"          
+         ba-panel
+         ba-panel-title="Line Chart"
+         ba-panel-class="with-scroll">
+        <div id="lineChart" class="admin-chart" ng-controller="LineChartCtrl"></div>
+      </div>
+
+    </div>
+  </div>
+</div>

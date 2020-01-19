@@ -52,36 +52,20 @@
       },
       dataProvider: [
         {
-          country: 'Lithuania',
-          litres: 501.9
+          country: 'Provisional Enrolment',
+          litres: 21
         },
         {
-          country: 'Czech Republic',
-          litres: 301.9
+          country: 'Current',
+          litres: 65
         },
         {
-          country: 'Ireland',
-          litres: 201.1
+          country: 'Under Examination',
+          litres: 7
         },
         {
-          country: 'Germany',
-          litres: 165.8
-        },
-        {
-          country: 'Australia',
-          litres: 139.9
-        },
-        {
-          country: 'Austria',
-          litres: 128.3
-        },
-        {
-          country: 'UK',
-          litres: 99
-        },
-        {
-          country: 'Belgium',
-          litres: 60
+          country: 'Undertaking Corrections',
+          litres: 3
         }
       ],
       valueField: 'litres',

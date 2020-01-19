@@ -1,3 +1,18 @@
 <div class="row ng-scope">
-<img ng-src="assets/img/app/cc-2019-Update.jpg" src="assets/img/cc-2019-Update.jpg">
+    <div class="col-lg-6 col-md-12" ng-controller="chartJs3DCtrl">
+        <div ba-panel ba-panel-title="2019 Whole Year Results" ba-panel-class="with-scroll ">
+            <div class="chartjs-canvas-holder-third-row">
+                <canvas id="bar" class="chart chart-horizontal-bar"
+                        chart-data="data" chart-labels="labels" chart-series="series" chart-click="changeData" chart-update="updateC">
+                </canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6 col-md-12" ng-controller="chartJs3DCtrl"
+    	ba-panel
+        ba-panel-title="Area Chart"
+        ba-panel-class="with-scroll">
+    	<div id="areaChart" class="admin-chart" ng-controller="AreaChartCtrl"></div>
+    </div>
 </div>

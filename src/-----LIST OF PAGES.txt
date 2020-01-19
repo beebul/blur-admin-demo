@@ -1,7 +1,7 @@
 -----LIST OF PAGES
 
 * Academic Unit KPIs
-Applications and Offers
+* Applications and Offers
 Enrolment
 Completions and Graduations
 Program quality and development
