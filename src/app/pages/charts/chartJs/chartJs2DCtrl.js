@@ -20,8 +20,9 @@
 
     $scope.options = { 
     legend: { display: true },
-    responsive: true, 
-    maintainAspectRatio: false
+      responsive: true, 
+      maintainAspectRatio: false
+      //
     };
 
     $scope.changeData = function () {

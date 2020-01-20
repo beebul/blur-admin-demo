@@ -31,6 +31,17 @@
       ]
     };
 
+    $scope.simpleLineDataBudget = {
+      labels: ['2014', '2015', '2016', '2017', '2018','2019'],
+      series: [
+        //[3,3.1,3.2,3.3,3.3,3.4],
+        [0.8,1.1,1,1.2,1.6,1.5],
+        [0.8,1.2,1.3,1.1,1.2,1],
+        [2.1,2.4,2.3,2.2,1.7,2.2],
+        // [17.2,16,18.1,15,14,15.1]
+      ]
+    };
+
     $scope.areaLineData = {
       labels: ["2021","2022","2023","2024","2025","2026"],
       series: [
@@ -225,6 +236,8 @@
 
     $timeout(function(){
       new Chartist.Line('#line-chart', $scope.simpleLineData, $scope.simpleLineOptions);
+      new Chartist.Line('#line-chart-budget', $scope.simpleLineDataBudget, $scope.simpleLineOptions);
+
       new Chartist.Line('#area-chart', $scope.areaLineData, $scope.areaLineOptions);
       new Chartist.Line('#bi-chart', $scope.biLineData, $scope.biLineOptions);
 

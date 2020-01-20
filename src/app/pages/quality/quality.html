@@ -1,13 +1,16 @@
-<div class="row ng-scope" ng-controller="chartistCtrl">
+<div class="row ng-scope" ng-controller="morrisCtrl">
 	<div class="row">
-		<div class="col-md-6 ">
-			<div ba-panel ba-panel-title="ALH Programs by Last Accreditation Year" ba-panel-class="with-scroll ">
-				<div id="area-chart" class="ct-chart"></div>
+		<div class="col-md-12">
+			<div ba-panel ba-panel-title="ALH Programs by last acreditation year" ba-panel-class="with-scroll primary-panel">
+				<div
+					bar-chart
+					bar-data='barProgramData'
+					bar-x='y'
+					bar-y='["a"]'
+					bar-labels='["Count of Programs"]'
+					bar-colors='colors'>
+				</div>
 			</div>
-		</div>
-		<div class="col-md-6">
-			<div ba-panel ba-panel-title="ALH Programs by Last Accreditation Year" ba-panel-class="with-scroll ">
-			<div id="line-chart" class="ct-chart"></div>
 		</div>
 	</div>
 </div>

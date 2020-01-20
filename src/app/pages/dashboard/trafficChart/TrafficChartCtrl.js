@@ -16,13 +16,11 @@
       $scope.doughnutData = {
           labels: [
               'City West',
-              'City East',
-              'Mawson Lakes',
-              'Magill',
+              'City East'
           ],
           datasets: [
               {
-                  data: [3852, 2858, 2542, 1922],
+                  data: [812, 1322],//TOTAL 2134
                   backgroundColor: [
                       dashboardColors.white,
                       dashboardColors.blueStone,
@@ -36,7 +34,7 @@
                       colorHelper.shade(dashboardColors.surfieGreen, 15),
                       colorHelper.shade(dashboardColors.silverTree, 15),
                   ],
-                  percentage: [34, 26, 23, 17]
+                  percentage: [38,62]
               }]
       };
 

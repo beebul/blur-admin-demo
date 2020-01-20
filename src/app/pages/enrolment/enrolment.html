@@ -1,5 +1,19 @@
-<div class="row ng-scope">
-	<div class="col-lg-6 col-md-6" ng-controller="chartJs2DCtrl">
-		dfdd
-	</div>
-</div>
+<section ng-controller="morrisCtrl">
+  <div class="row ng-scope">
+    <div class="col-md-12">
+      <div ba-panel ba-panel-title="Enrolments" ba-panel-class="with-scroll">
+        <div
+            line-chart
+            line-data='lineDataEnrol'
+            line-xkey='y'
+            line-ykeys='["a"]'
+            line-labels='["Total Enrolments"]'
+            line-colors='colors'>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
