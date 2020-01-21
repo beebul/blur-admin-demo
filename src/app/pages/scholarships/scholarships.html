@@ -1,9 +1,81 @@
 <div class="row ng-scope">
-  <div class="widgets">
-    
-      <h5>Info goes here</h5>
-		<dashboard-pie-askcc></dashboard-pie-askcc>
+	<div class="widgets">
+		      <div ba-panel ba-panel-title="Enrolments" ba-panel-class="with-scroll">
 
-    </div>
-  </div>
+<script>
+var ctx = $("#c");
+var myChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ["January;2016", "February;2017", "March;2018", "January;2019", "February;2020", "March;2021"],
+    datasets: [{
+      label: '# of Votes',
+      xAxisID:'xAxis1',
+      data: [12, 19, 3, 5, 2, 3]
+    }]
+  },
+  options:{
+    scales:{
+      xAxes:[
+        {
+          id:'xAxis1',
+          type:"category",
+          ticks:{
+            callback:function(label){
+              var month = label.split(";")[0];
+              var year = label.split(";")[1];
+              return month;
+            }
+          }
+        },
+        {
+          id:'xAxis2',
+          type:"category",
+          gridLines: {
+            drawOnChartArea: false, // only want the grid lines for one axis to show up
+          },
+          ticks:{
+            callback:function(label){
+              var month = label.split(";")[0];
+              var year = label.split(";")[1];
+              if(month === "February"){
+                return year;
+              }else{
+                return "";
+              }
+            }
+          }
+        },
+        {
+          id:'xAxis3',
+          type:"category",
+          gridLines: {
+            drawOnChartArea: false, // only want the grid lines for one axis to show up
+          },
+          ticks:{
+            callback:function(label){
+              var month = label.split(";")[0];
+              var year = label.split(";")[1];
+              if(month === "February"){
+                return year;
+              }else{
+                return "";
+              }
+            }
+          }
+        }],
+      yAxes:[{
+        ticks:{
+          beginAtZero:true
+        }
+      }]
+    }
+  }
+});
+</script>
+		<!-- HTML -->
+		<canvas id="c"></canvas>
+	
+	</div>
+	</div>
 </div>

@@ -9,10 +9,10 @@
       .directive('dashboardPieAskCC', dashboardPieAskCC);
 
   /** @ngInject */
-  function dashboardPieChart() {
+  function dashboardPieAskCC() {
     return {
       restrict: 'E',
-      controller: 'dashboardPieAskCCCtrl',
+      controller: 'DashboardPieAskCCCtrl',
       templateUrl: 'app/pages/dashboard/dashboardPieAskCC/dashboardPieAskCC.html'
     };
   }

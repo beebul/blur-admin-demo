@@ -45,5 +45,8 @@
   },
   "scripts": {
     "postinstall": "bower install"
+  },
+  "dependencies": {
+    "jshint": "^2.11.0"
   }
 }
